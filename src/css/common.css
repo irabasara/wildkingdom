@@ -1,18 +1,226 @@
+@import '../../node_modules/normalize.css/normalize.css';
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
-  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+
+  background-color: #efe9dd;
+  color: #222220;
+  max-width: 1920px;
+  min-width: 320px;
+}
+main,
+.header-container {
+  padding: 0 calc(20px + (170 - 20) * (100vw - 300px) / (1920 - 300));
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+:root {
+  --main-color: #222220;
+  --light-color: #efe9dd;
+  --white: #fff;
+  --accent-color: #9d875c;
+  --accent-bg: #c1ab81;
+  --accent-font: 'Italiana', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* BLOK */
+/* BLOK */
+/* BLOK */
+
+.top-blok {
+  display: grid;
+  gap: 20px;
+}
+.top-blok-label {
+  text-transform: capitalize;
+  line-height: 156%;
+}
+.top-blok-title {
+  font-family: var(--accent-font);
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--accent-color);
+  text-transform: capitalize;
+}
+.top-blok-text {
+  display: grid;
+  gap: 20px;
+}
+.top-blok-text p:first-child {
+  font-style: italic;
+  line-height: 156%;
+}
+.text {
+  max-width: 460px;
+  line-height: 156%;
+}
+.top-blok-button {
+  background-image: url('../img/bg-button.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-weight: 300;
+  height: 46px;
+  width: 137px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  transition: all 300ms ease;
+}
+.top-blok-button:hover {
+  opacity: 1;
+}
+.button {
+  padding: 10px 30px;
+  line-height: 156%;
+}
+
+/* BLOK */
+/* BLOK */
+/* BLOK */
+
+/* HEADER */
+.header-container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.menu-list {
+  color: var(--accent-color);
+
+  display: flex;
+  gap: 50px;
+}
+
+.header-action {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  color: var(--accent-color);
+}
+.outline-btn {
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
+  height: 46px;
+  width: 137px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  transition: all 300ms ease;
+  color: var(--accent-color);
+}
+.outline-btn:hover {
+  color: var(--accent-bg);
+  border-color: var(--accent-bg);
+}
+
+@media (max-width: 1240px) {
+  .header-container {
+    display: none;
+  }
+  .icon-menu {
+    display: inline-block;
+    width: 40px;
+    stroke-width: 0.5px;
+    stroke: var(--accent-color);
+    fill: transparent;
+  }
+  .header-mobile-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .header-logo {
+    width: 150px;
+  }
+  .header-mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background: var(--main-color);
+    overflow-y: scroll;
+  }
+  .header-action {
+    margin: 0 auto;
+    max-width: 350px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+  .menu-list {
+    gap: 20px;
+    padding: 40px 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .open-menu {
+    border: none;
+    background: transparent;
+  }
+}
+
+@media (min-width: 1240px) {
+  .header-mobile-container {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-mobile-menu {
+    width: 40%;
+    padding: 40px;
+  }
 }
