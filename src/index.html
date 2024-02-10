@@ -51,10 +51,16 @@
         </svg>
       </button>
     </div>
-    <div class="header-mobile-menu js-menu-container visually-hidden">
+    <div class="header-mobile-menu js-menu-container">
     
       <nav class="header-menu">
-    
+
+    <button type="button" class="js-close-menu close-menu">
+      <svg class="icon icon-close">
+        <use xlink:href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
         <ul class="menu-list">
           <li class="menu-item">
             <a href="#home" class="menu-link">Home</a>
@@ -101,6 +107,68 @@
         </div>
       </section>
     </main>
+    <footer  class="footer">
+      <div class="footer-wrap container">
+      <div class="footer-top-container">
+
+        <div class="footer-column social-container">
+          <h3>Sitemap</h3>
+          <ul class="footer-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+          <ul class="social-links">
+            <li><a href="" target="_blank" class="soc-icon">
+              <svg class="icon-s">
+                <use xlink:href="./img/icons.svg#icon-s-twit"></use>
+              </svg>
+            </a></li>
+            <li><a href="" target="_blank" class="soc-icon">
+              <svg class="icon-s">
+                <use xlink:href="./img/icons.svg#icon-s-inst"></use>
+              </svg>
+            </a></li>
+            <li><a href="" target="_blank" class="soc-icon">
+              <svg class="icon-s">
+                <use xlink:href="./img/icons.svg#icon-s-tiktok"></use>
+              </svg>
+            </a></li>
+            <li><a href="" target="_blank" class="soc-icon">
+              <svg class="icon-s">
+                <use xlink:href="./img/icons.svg#icon-s-medium"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+        <div class="line-vertical"></div>
+
+        <div class="footer-column footer-logo-container">
+          <a href="./index.html" class="header-logo">
+            <img src="./img/logo.svg" alt="logo" width="217">
+          </a>
+        </div>
+
+        <div class="line-vertical"></div>
+
+
+        <div class="footer-column subscribe-container">
+          <h3>Treating all the pets present here like royalty.</h3>
+          <form class="subscribe-form">
+            <input type="email" name="email" placeholder="Enter email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+      <div class="footer-bottom-container">
+        <div class="line-horizontal"></div>
+
+        <p>Copyright Dotcreativemarket</p>
+      </div>
+      </div>
+    </footer>
   <script type="module" src="./js/main.js"></script>
   </body>
 </html>
