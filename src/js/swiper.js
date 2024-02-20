@@ -1,38 +1,30 @@
 import Swiper from 'swiper';
 
 const swiper = new Swiper('.swiper', {
-  effect: 'creative',
-  creativeEffect: {
-    prev: {
-      translate: [0, 0, -400],
-    },
-    next: {
-      translate: ['100%', 0, 0],
-    },
-  },
   direction: 'horizontal',
-  sledesPerView: 4,
+  sledesPerView: 1,
   spaceBetween: 10,
   loop: true,
   keyboard: {
     enabled: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.quote-swiper-button-next',
+    prevEl: '.quote-swiper-button-prev',
   },
 });
 
-// const swiperEl = document.querySelector('.swiper-wrapper');
-const buttonNextEl = document.querySelector('.swiper-button-next');
-const buttonPrevEl = document.querySelector('.swiper-button-prev');
+// const buttonNextEl = document.querySelector('.swiper-button-next');
+// const buttonPrevEl = document.querySelector('.swiper-button-prev');
+const QuoteButtonNextEl = document.querySelector('.quote-swiper-button-next');
+const QuoteButtonPrevEl = document.querySelector('.quote-swiper-button-prev');
 
-buttonNextEl.addEventListener('click', () => {
+QuoteButtonNextEl.addEventListener('click', () => {
   swiper.slideNext();
   console.log('object');
 });
 
-buttonPrevEl.addEventListener('click', () => {
+QuoteButtonPrevEl.addEventListener('click', () => {
   swiper.slideNext();
   console.log('object');
 });
