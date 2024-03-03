@@ -86,43 +86,54 @@
     </div>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section container">
+        <div class="hero-text-conteiner">
+        <h1>A better world for pets</h1>
+      
+        <a href="#" class="outline-btn">Explore</a>
+          </div>
+
         <div class="hero-wrap">
           
 
-          <!-- <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./img/slider.png" alt="dog">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/slider.png" alt="dog">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/slider.png" alt="dog">
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/slider.png" alt="dog">
-              </div>
-            </div>
-         <div class="swiper-btn">
-          <div class="swiper-button-prev">
+         <div class="hero-slider"> 
+          <div class="swiper hero-swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="slide-content"  data-swiper-parallax-scale="0.2" data-swiper-parallax-x="40%">
+                <img class="big-slide-img slide" src="./img/slide-1-big.png" alt="dog">
+   </div>
+   </div>
+      <div class="swiper-slide">
+      <div class="slide-content"  data-swiper-parallax-scale="0.2" data-swiper-parallax-x="40%">
+                <img class="big-slide-img slide" src="./img/slide-2-big.png" alt="dog">
+   </div>
+   </div>
+     <div class="swiper-slide">
+      <div class="slide-content" data-swiper-parallax-scale="0.2" data-swiper-parallax-x="40%">
+                <img class="big-slide-img slide" src="./img/slide-3-big.png" alt="dog">
+   </div>
+   </div>
+  </div>
+           
+         <div class="slider-btn">
+          <div class="slider-button-prev">
             <svg width="34" height="16">
               <use xlink:href="./img/icons.svg#icon-arrow"></use>
             </svg>
           </div>
-            <div class="swiper-button-next">
+            <div class="slider-button-next">
               <svg width="34" height="16">
                 <use xlink:href="./img/icons.svg#icon-arrow"></use>
               </svg>
             </div>
            
          </div>
-          </div> -->
+          </div> 
 
-         
-          
-         
+
 
         </div>
       </section>
@@ -258,25 +269,24 @@
         <div class="qoute-wrap">
           <img src="./img/qoute.png" alt="quote">
           <div class="swiper mySwiper">
-                      <div class="qoute-swiper-wrapper">
-                        <div class="qoute-swiper-slide">
-                          <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a
+                      <div class="swiper-wrapper quote-wpap">
+                        <div class="swiper-slide qoute-swiper-slide">
+                          <p class="quote text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a
                           placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.</p>
                           <p class="quote-autor">Etiam vulputate</p>
                         </div>
-                        <!-- <div class="qoute-swiper-slide">
-                          <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue.
-                            Cras feugiat, diam a
-                            placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.</p>
-                          <p class="quote-autor">Vulputate</p>
-                        </div>
-                        <div class="qoute-swiper-slide">
-                          <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue.
+                        <div class="swiper-slide qoute-swiper-slide">
+                          <p class="quote text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue.
                             Cras feugiat, diam a
                             placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.</p>
                           <p class="quote-autor">Etiam</p>
-                        </div> -->
-                        
+                        </div>
+                        <div class="swiper-slide qoute-swiper-slide">
+                          <p class="quote text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue.
+                            Cras feugiat, diam a
+                            placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.</p>
+                          <p class="quote-autor">vulputate</p>
+                        </div>
                       </div>
                    <div class="quote-swiper-btn">
                     <div class="quote-swiper-button-prev">
@@ -359,6 +369,7 @@
       </div>
     </footer>
   <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/hero-slider.js"></script>
   <script type="module" src="./js/swiper.js"></script>
 
   </body>
